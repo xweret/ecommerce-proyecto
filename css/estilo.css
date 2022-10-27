@@ -1,3 +1,22 @@
 #cargando {
     display: none;
 }
+
+A:link {
+    text-decoration: none;
+}
+
+.fot {
+    color: black;
+}
+
+.fot:hover{
+    color: red;
+}
+
+
+footer {
+  background-color: black;
+  bottom: 0;
+  width: 100%;
+}

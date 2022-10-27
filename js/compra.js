@@ -5,7 +5,6 @@ const procesarCompraBtn = document.getElementById('procesar-compra');
 const cliente = document.getElementById('cliente');
 const correo = document.getElementById('correo');
 
-
 cargarEventos();
 
 function cargarEventos() {
@@ -21,12 +20,8 @@ function cargarEventos() {
 
     carrito.addEventListener('change', (e) => { compra.obtenerEvento(e) });
     carrito.addEventListener('keyup', (e) => { compra.obtenerEvento(e) });
-
-
 }
-
 function procesarCompra() {
-    e.preventDefault();
     if (compra.obtenerProductosLocalStorage().length === 0) {
         Swal.fire({
             type: 'error',
@@ -46,6 +41,44 @@ function procesarCompra() {
             showConfirmButton: false,
             timer: 2000
         })
+    }
+    else {
+        (function () {
+            emailjs.init("user_CEozz2F39lJJOLF5mJiDA");
+        })();
+
+        var myform = $("form#procesar-pago");
+
+        myform.submit( (event) => {
+            event.preventDefault();
+
+            var service_id = "default_service";
+            var template_id = "template_3SA9LsqQ";
+
+            const cargandoGif = document.querySelector('#cargando');
+            cargandoGif.style.display = 'block';
+
+            const enviado = document.createElement('img');
+            enviado.src = 'img/mail.gif';
+            enviado.style.display = 'block';
+            enviado.width = '150';
+
+            emailjs.sendForm(service_id, template_id, myform[0])
+                .then(() => {
+                    cargandoGif.style.display = 'none';
+                    document.querySelector('#loaders').appendChild(enviado);
+
+                    setTimeout(() => {
+                        compra.vaciarLocalStorage();
+                        enviado.remove();
+                        window.location = "index.html";
+                    }, 2000);
+                },);
+
+            return false;
+
+        });
+
     }
 }
 
