@@ -1,0 +1,66 @@
+[
+    {
+        "titulo":"HP PAVILION",
+        "foto": "./img/hp1.jpg",
+        "id": 56431,
+        "ram": "8GB de RAM",
+        "Disco": "256GB SSD"
+    },
+    {
+        "titulo":"ACER",
+        "foto": "./img/acer.jpg",
+        "id": 56433,
+        "ram": "12GB de RAM",
+        "Disco": "512GB SSD"
+    },
+    {
+        "titulo":"LENOVO",
+        "foto": "./img/lenovo.jpg",
+        "id": 56434,
+        "ram": "8GB de RAM",
+        "Disco": "1TB HDD"
+    },
+    {
+        "titulo":"APPLE MacBook Air",
+        "foto": "./img/apple.jpg",
+        "id": 56435,
+        "ram": "8GB de RAM",
+        "Disco": "256GB SSD"
+    },
+    {
+        "titulo":"Huawei",
+        "foto": "./img/huawei.jpg",
+        "id": 56436,
+        "ram": "8GB de RAM",
+        "Disco": "1TB SSD"
+    },
+    {
+        "titulo":"Samnsung",
+        "foto": "./img/samsung.jpg",
+        "id": 56437,
+        "ram": "4GB de RAM",
+        "Disco": "256GB SSD"
+    },
+    {
+        "titulo":"LG",
+        "foto": "./img/lg.jpg",
+        "id": 56438,
+        "ram": "8GB de RAM",
+        "Disco": "512GB SSD"
+    },
+    {
+        "titulo":"Advance",
+        "foto": "./img/hp1.jpg",
+        "id": 56439,
+        "ram": "8GB de RAM",
+        "Disco": "256GB SSD"
+    },
+    {
+        "titulo":"DELL",
+        "foto": "img/dell.jpg",
+        "id": 56440,
+        "ram": "8GB de RAM",
+        "Disco": "1TB SSD"
+    }
+]
+

@@ -1,0 +1,3 @@
+function pintarInterfaz(){
+    onloa
+}
